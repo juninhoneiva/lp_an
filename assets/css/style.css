@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.top {
+  padding: 15px 0;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.top-tittle {
+  display: flex;
+}
+
+.top h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+#logo-thin {
+  font-weight: 200;
+}
+
+.top-contato {
+  display: flex;
+  gap: 20px;
+}
+
+.corpo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/assets/img/bkgd.webp);
+  background-color: #174168;
+  background-blend-mode: multiply;
+  height: 100vh;
+}
+
+.corpo h1,
+.corpo p {
+  color: #ffffff;
+}
+
+#warning {
+  padding: 20px 0 20px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  text-align: center;
+  font-weight: 200;
+}
+
+.corpo p {
+  padding: 30px;
+  font-size: 1.3rem;
+}
+
+.areas {
+  padding: 0 200px;
+  display: flex;
+}
+
+#copyright {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: #ffffff;
+  font-size: 0.9rem;
+  background-color: #174168;
+}
