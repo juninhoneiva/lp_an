@@ -62,7 +62,12 @@ a {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   text-align: center;
-  font-weight: 200;
+}
+
+.corpo h1 {
+  font-weight: 400;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .corpo p {
@@ -136,7 +141,7 @@ a {
 
 .texto-alt:hover {
   opacity: 100%;
-  transition: 1.5s ease-in;
+  transition: 1s ease-in;
 }
 
 .area p {
