@@ -3,6 +3,7 @@
   margin: 0;
   border: 0;
   font-family: "Raleway", sans-serif;
+  margin: 0, auto;
 }
 
 a {
@@ -119,6 +120,7 @@ ul li {
 .texto-alt p {
   text-align: left;
   font-size: 0.9rem;
+  line-height: 1.3;
   margin: 0 15px;
 }
 
@@ -181,7 +183,39 @@ ul li {
 }
 @media screen and (max-width: 800px) {
   .areas-itens {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .area a::after {
+    display: none;
+  }
+
+  .areas {
+    padding: 20px;
+  }
+  .corpo p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .texto-alt {
+    display: none;
+  }
+
+  .area a {
+    padding: 5px;
+    gap: 0;
+  }
+
+  .area p {
+    font-size: 0.7rem;
+  }
+
+  .area svg {
+    width: 20px;
   }
 
   .top-contato {
@@ -193,13 +227,27 @@ ul li {
 }
 
 @media screen and (max-width: 454px) {
+  .areas-itens {
+    grid-template-columns: auto auto;
+    justify-items: center;
+  }
+
   .logo svg {
     width: 300px;
   }
+
+  #logo {
+    padding: 0;
+  }
+
   .warning h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 100;
     max-width: 100vw;
+  }
+
+  .warning {
+    padding: 15px;
   }
 
   .slogan {
@@ -207,14 +255,25 @@ ul li {
   }
 
   .warning {
-    max-width: 100vw;
+    padding: 15px 0;
+    max-width: 100%;
   }
 
   .areas {
+    padding: 0;
     max-width: 100vw;
   }
 
   .areas-itens {
     padding: 10px;
+  }
+
+  .area {
+    max-width: 105px;
+    min-width: 105px;
+  }
+  #copyright p {
+    font-size: 0.8rem;
+    text-align: center;
   }
 }
